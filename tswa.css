@@ -34,6 +34,14 @@ body
   margin-right: 0px;
   margin-bottom: 0px;
   background-color: #7fa4bf;
+
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;    
+
 }
 
 body,td,th,select
@@ -287,6 +295,15 @@ td.cellSecondaryNavigationBar > table
 
 body > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(8) > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > img,
 .cellMSLogo > table > tbody > tr > td:nth-child(1) > img{
-    width: auto;
-    height: auto;
+width: auto;
+height: auto;
+}
+
+img,
+a{
+-webkit-user-drag: none;
+}
+
+td{
+cursor: default;
 }
